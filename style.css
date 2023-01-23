@@ -1,0 +1,80 @@
+html {
+    background-color: rgb(235, 194, 32);
+
+}
+
+body.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    width: 90%;
+}
+
+#bg {
+
+    visibility: hidden;
+    display: flex;
+
+}
+
+#title {
+    text-shadow: 5px 5px rgba(0, 0, 255, .2);
+}
+
+#question {
+    display: flex;
+}
+
+#answers {
+    display: flex;
+}
+
+#time {
+    display: block;
+}
+
+#restart {
+    display: none;
+}
+
+.timerdiv {
+    display: flex;
+
+}
+
+#answers button:hover {
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+
+#end {
+    --animate-duration: 4s;
+
+    text-shadow: 5px 5px rgba(0, 0, 255, .2);
+
+}
+
+#timer {
+    --animate-duration: 1.65s;
+}
+
+@media screen and (min-width: 900px) {
+    #info {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #question {
+        font-size: x-large;
+    }
+
+    #end {
+        font-size: x-large;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+}
